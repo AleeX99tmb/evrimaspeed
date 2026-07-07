@@ -6,10 +6,105 @@ const dinosaurs = [
     // ======================
     // HERBIVORES
     // ======================
-
+    {
+        category: "Herbivores",
+        name: "Diabloceratops",
+        color: "green",
+        data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Herbivores",
+        name: "Dryosaurus",
+        color: "green",
+        data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Herbivores",
+        name: "Hypsilophodon",
+        color: "green",
+        data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
     {
         category: "Herbivores",
         name: "Kentrosaurus",
+        color: "green",
+        data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Herbivores",
+        name: "Maiasaurus",
+        color: "green",
+        data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Herbivores",
+        name: "Pachycephalosaurus",
+        color: "green",
+        data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Herbivores",
+        name: "Stegosaurus",
+        color: "green",
+        data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Herbivores",
+        name: "Tenontosaurus",
+        color: "green",
+        data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Herbivores",
+        name: "Triceratops",
         color: "green",
         data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
@@ -26,10 +121,117 @@ const dinosaurs = [
     // ======================
     // CARNIVORES
     // ======================
-
     {
         category: "Carnivores",
         name: "Allosaurus",
+        color: "red",
+        data:[
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Carnivores",
+        name: "Carnotaurus",
+        color: "red",
+        data:[
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Carnivores",
+        name: "Ceratosaurus",
+        color: "red",
+        data:[
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Carnivores",
+        name: "Deinosuchus",
+        color: "red",
+        data:[
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Carnivores",
+        name: "Dilophosaurus",
+        color: "red",
+        data:[
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Carnivores",
+        name: "Herrerasaurus",
+        color: "red",
+        data:[
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Omniraptor",
+        name: "Allosaurus",
+        color: "red",
+        data:[
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Pteranodon",
+        name: "Allosaurus",
+        color: "red",
+        data:[
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Troodon",
+        name: "Allosaurus",
+        color: "red",
+        data:[
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+    {
+        category: "Carnivores",
+        name: "Tyrannosaurus",
         color: "red",
         data:[
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
@@ -47,9 +249,21 @@ const dinosaurs = [
     // ======================
     // OMNIVORES
     // ======================
-
     {
         category:"Omnivores",
+        name:"Beipiaosaurus",
+        color:"purple",
+        data:[
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+    },
+
+    {
+        category:"Gallimimus",
         name:"Beipiaosaurus",
         color:"purple",
         data:[
