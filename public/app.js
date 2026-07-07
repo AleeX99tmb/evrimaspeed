@@ -1,94 +1,92 @@
 const ctx = document.getElementById("speedChart");
 
 
-const characters = [
+const dinosaurs = [
+
+    // ======================
+    // HERBIVORES
+    // ======================
 
     {
-        name: "Allosaurus",
-
-        color: "red",
-
+        category: "Herbivores",
+        name: "Kentrosaurus",
+        color: "green",
         data: [
-            {x:0, y:10},
-            {x:5, y:15},
-            {x:10, y:20},
-            {x:15, y:25},
-            {x:20, y:32},
-            {x:25, y:38},
-            {x:30, y:42},
-            {x:35, y:47},
-            {x:40, y:52},
-            {x:45, y:55},
-            {x:50, y:58},
-            {x:55, y:60},
-            {x:60, y:62},
-            {x:65, y:64},
-            {x:70, y:65},
-            {x:75, y:66},
-            {x:80, y:67},
-            {x:85, y:68},
-            {x:90, y:69},
-            {x:95, y:70},
-            {x:100, y:70}
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
         ]
+    },
 
+    
+
+
+    // ======================
+    // CARNIVORES
+    // ======================
+
+    {
+        category: "Carnivores",
+        name: "Allosaurus",
+        color: "red",
+        data:[
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
     },
 
 
+   
+
+
+    // ======================
+    // OMNIVORES
+    // ======================
+
     {
-        name:"Kentrosaurus",
-
-        color:"blue",
-
+        category:"Omnivores",
+        name:"Beipiaosaurus",
+        color:"purple",
         data:[
-            {x:0,y:8},
-            {x:5,y:12},
-            {x:10,y:18},
-            {x:15,y:22},
-            {x:20,y:27},
-            {x:25,y:32},
-            {x:30,y:38},
-            {x:35,y:43},
-            {x:40,y:48},
-            {x:45,y:52},
-            {x:50,y:56},
-            {x:55,y:59},
-            {x:60,y:62},
-            {x:65,y:64},
-            {x:70,y:66},
-            {x:75,y:67},
-            {x:80,y:68},
-            {x:85,y:69},
-            {x:90,y:70},
-            {x:95,y:70},
-            {x:100,y:70}
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
         ]
+    },
 
-    }
 
 ];
 
 
 
-const datasets = characters.map(character => {
+// Crear datasets separados por columnas
+
+const datasets = dinosaurs.map(dinosaur => {
 
     return {
 
-        label: character.name,
+        label:`${dinosaur.category} - ${dinosaur.name}`,
 
-        data: character.data,
+        data:dinosaur.data,
 
-        borderColor: character.color,
+        borderColor:dinosaur.color,
 
-        backgroundColor: character.color,
+        backgroundColor:dinosaur.color,
 
-        borderWidth: 2,
+        borderWidth:2,
 
-        tension: 0.3,
+        tension:0.3,
 
-        pointRadius: 0,
+        pointRadius:1,
 
-        pointHoverRadius: 7
+        pointHoverRadius:10
 
     };
 
@@ -98,31 +96,30 @@ const datasets = characters.map(character => {
 
 new Chart(ctx, {
 
+    type:"line",
 
-    type: "line",
-
-
-    data: {
-
-        datasets: datasets
-
+    data:{
+        datasets:datasets
     },
 
 
-    options: {
-
+    options:{
 
         responsive:true,
 
 
         plugins:{
 
+            legend:{
+
+                position:"right",
+
+            },
+
 
             tooltip:{
 
-
                 callbacks:{
-
 
                     label:function(context){
 
@@ -140,8 +137,7 @@ new Chart(ctx, {
         scales:{
 
 
-            x:{ //growth axis
-
+            x:{ //growth
 
                 type:"linear",
 
@@ -149,53 +145,34 @@ new Chart(ctx, {
 
                 max:100,
 
-
                 ticks:{
-
                     stepSize:5
-                    
-
                 },
 
-
                 title:{
-
-
                     display:true,
-
                     text:"Growth (%)"
-
                 }
 
             },
 
 
-            y:{ //speed axis
-                
+            y:{ //speed
 
                 min:0,
 
                 max:100,
 
-
                 ticks:{
-
                     stepSize:5
-
                 },
 
-
                 title:{
-
-
                     display:true,
-
                     text:"Speed"
-
                 }
 
             }
-
 
         }
 
