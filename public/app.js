@@ -1,5 +1,12 @@
 const ctx = document.getElementById("speedChart");
 
+function loadImage(name) {
+    const img = new Image();
+
+    img.src = `img/${name.toLowerCase().replace(/\s+/g, "-")}.png`;
+
+    return img;
+}
 
 const dinosaurs = [
 
@@ -9,7 +16,7 @@ const dinosaurs = [
     {
         category: "Herbivores",
         name: "Diabloceratops",
-        color: "green",
+        color: "gold",
         data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -21,7 +28,7 @@ const dinosaurs = [
     {
         category: "Herbivores",
         name: "Dryosaurus",
-        color: "green",
+        color: "goldenrod",
         data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -33,7 +40,7 @@ const dinosaurs = [
     {
         category: "Herbivores",
         name: "Hypsilophodon",
-        color: "green",
+        color: "pink",
         data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -50,14 +57,14 @@ const dinosaurs = [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:39.6},{x:91,y:39.1},{x:97,y:38},
             {x:100,y:null}
         ]
     },
     {
         category: "Herbivores",
         name: "Maiasaurus",
-        color: "green",
+        color: "blue",
         data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -69,7 +76,7 @@ const dinosaurs = [
     {
         category: "Herbivores",
         name: "Pachycephalosaurus",
-        color: "green",
+        color: "tomato",
         data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -81,7 +88,7 @@ const dinosaurs = [
     {
         category: "Herbivores",
         name: "Stegosaurus",
-        color: "green",
+        color: "olive",
         data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -93,7 +100,7 @@ const dinosaurs = [
     {
         category: "Herbivores",
         name: "Tenontosaurus",
-        color: "green",
+        color: "navy",
         data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -105,7 +112,7 @@ const dinosaurs = [
     {
         category: "Herbivores",
         name: "Triceratops",
-        color: "green",
+        color: "violed",
         data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -124,11 +131,11 @@ const dinosaurs = [
     {
         category: "Carnivores",
         name: "Allosaurus",
-        color: "red",
+        color: "orange",
         data:[
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
-            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:25,y:25.1},{x:30,y:30.9},{x:35,y:null},{x:40,y:37.9},{x:45,y:40.3},
+            {x:50,y:41.4},{x:55,y:41.2},{x:60,y:null},{x:65,y:null},{x:70,y:null},
             {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
             {x:100,y:null}
         ]
@@ -148,7 +155,7 @@ const dinosaurs = [
     {
         category: "Carnivores",
         name: "Ceratosaurus",
-        color: "red",
+        color: "plum",
         data:[
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -160,7 +167,7 @@ const dinosaurs = [
     {
         category: "Carnivores",
         name: "Deinosuchus",
-        color: "red",
+        color: "turquoise",
         data:[
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -172,7 +179,7 @@ const dinosaurs = [
     {
         category: "Carnivores",
         name: "Dilophosaurus",
-        color: "red",
+        color: "purple",
         data:[
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -184,7 +191,7 @@ const dinosaurs = [
     {
         category: "Carnivores",
         name: "Herrerasaurus",
-        color: "red",
+        color: "khaki",
         data:[
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -194,9 +201,9 @@ const dinosaurs = [
         ]
     },
     {
-        category: "Omniraptor",
-        name: "Allosaurus",
-        color: "red",
+        category: "Carnivores",
+        name: "Omniraptor",
+        color: "brown",
         data:[
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -206,9 +213,9 @@ const dinosaurs = [
         ]
     },
     {
-        category: "Pteranodon",
-        name: "Allosaurus",
-        color: "red",
+        category: "Carnivores",
+        name: "Pteranodon",
+        color: "coral",
         data:[
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -218,9 +225,9 @@ const dinosaurs = [
         ]
     },
     {
-        category: "Troodon",
-        name: "Allosaurus",
-        color: "red",
+        category: "Carnivores",
+        name: "Troodon",
+        color: "white",
         data:[
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -232,7 +239,7 @@ const dinosaurs = [
     {
         category: "Carnivores",
         name: "Tyrannosaurus",
-        color: "red",
+        color: "indigo",
         data:[
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -252,7 +259,7 @@ const dinosaurs = [
     {
         category:"Omnivores",
         name:"Beipiaosaurus",
-        color:"purple",
+        color:"teal",
         data:[
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -263,9 +270,9 @@ const dinosaurs = [
     },
 
     {
-        category:"Gallimimus",
-        name:"Beipiaosaurus",
-        color:"purple",
+        category:"Omnivores",
+        name:"Gallimimus",
+        color:"brown",
         data:[
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
@@ -278,35 +285,90 @@ const dinosaurs = [
 
 ];
 
+dinosaurs.forEach(dinosaur => {
+    dinosaur.image = loadImage(dinosaur.name);
+});
+
+
 
 
 // Crear datasets separados por columnas
 
-const datasets = dinosaurs.map(dinosaur => {
+const datasets = dinosaurs.map(dinosaur => ({
 
-    return {
+    label: `${dinosaur.category} - ${dinosaur.name}`,
 
-        label:`${dinosaur.category} - ${dinosaur.name}`,
+    data: dinosaur.data,
 
-        data:dinosaur.data,
+    image: dinosaur.image,
 
-        borderColor:dinosaur.color,
+    borderColor: dinosaur.color,
 
-        backgroundColor:dinosaur.color,
+    backgroundColor: dinosaur.color,
 
-        borderWidth:2,
+    borderWidth: 2,
 
-        tension:0.3,
+    tension: 0,
 
-        pointRadius:1,
+    pointRadius: 2,
 
-        pointHoverRadius:10
+    pointHoverRadius: 0
 
-    };
+}));
 
-});
+const hoverImagePlugin = {
 
+    id: "hoverImage",
 
+    afterDatasetsDraw(chart) {
+
+        const active = chart.getActiveElements();
+
+        if (!active.length) return;
+
+        const {ctx} = chart;
+
+        const {datasetIndex, index} = active[0];
+
+        const point = chart.getDatasetMeta(datasetIndex).data[index];
+
+        const image = chart.data.datasets[datasetIndex].image;
+
+        if (!image || !image.complete) return;
+
+        const size = 42;
+
+        ctx.save();
+
+        // círculo blanco detrás
+        ctx.beginPath();
+        ctx.arc(point.x, point.y, size / 2 + 3, 0, Math.PI * 2);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        // borde negro
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "#222";
+        ctx.stroke();
+
+        // imagen
+        ctx.beginPath();
+        ctx.arc(point.x, point.y, size / 2, 0, Math.PI * 2);
+        ctx.clip();
+
+        ctx.drawImage(
+            image,
+            point.x - size / 2,
+            point.y - size / 2,
+            size,
+            size
+        );
+
+        ctx.restore();
+
+    }
+
+};
 
 new Chart(ctx, {
 
@@ -316,6 +378,7 @@ new Chart(ctx, {
         datasets:datasets
     },
 
+    plugins: [hoverImagePlugin],
 
     options:{
 
@@ -337,7 +400,7 @@ new Chart(ctx, {
 
                     label:function(context){
 
-                        return `${context.dataset.label}: Growth ${context.parsed.x}% - Speed ${context.parsed.y}`;
+                        return ` Growth ${context.parsed.x}% - Speed ${context.parsed.y} km/h`;
 
                     }
 
@@ -373,12 +436,12 @@ new Chart(ctx, {
 
             y:{ //speed
 
-                min:0,
+                min:15,
 
-                max:100,
+                max:60,
 
                 ticks:{
-                    stepSize:5
+                    stepSize:2
                 },
 
                 title:{
