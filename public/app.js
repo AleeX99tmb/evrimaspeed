@@ -24,8 +24,8 @@ const dinosaurs = [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:64},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
         },
         frail: {
@@ -34,8 +34,8 @@ const dinosaurs = [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:60},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
         ]
         }, 
         
@@ -44,97 +44,201 @@ const dinosaurs = [
         category: "Herbivores",
         name: "Dryosaurus",
         color: "goldenrod",
-        data: [
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
     {
         category: "Herbivores",
         name: "Hypsilophodon",
         color: "pink",
-        data: [
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
     {
         category: "Herbivores",
         name: "Kentrosaurus",
         color: "green",
-        data: [
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:17.9},{x:30,y:24.2},{x:35,y:27.9},{x:40,y:33},{x:45,y:36.7},
             {x:50,y:41.5},{x:55,y:43.5},{x:60,y:42.4},{x:65,y:null},{x:70,y:null},
             {x:75,y:39.6},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
             {x:100,y:null}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:17.9},{x:30,y:24.2},{x:35,y:27.9},{x:40,y:33},{x:45,y:36.7},
+            {x:50,y:41.5},{x:55,y:43.5},{x:60,y:42.4},{x:65,y:null},{x:70,y:null},
+            {x:75,y:39.6},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+        },
     },
     {
         category: "Herbivores",
         name: "Maiasaura",
         color: "blue",
-        data: [
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:19.5},{x:30,y:16.8},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
             {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
             {x:100,y:null}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:19.5},{x:30,y:16.8},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+        },
     },
     {
         category: "Herbivores",
         name: "Pachycephalosaurus",
         color: "tomato",
-        data: [
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:23.8},{x:30,y:30.6},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
             {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
             {x:100,y:null}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:23.8},{x:30,y:30.6},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+        },
     },
     {
         category: "Herbivores",
         name: "Stegosaurus",
         color: "olive",
-        data: [
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
     {
         category: "Herbivores",
         name: "Tenontosaurus",
         color: "navy",
-        data: [
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
     {
         category: "Herbivores",
         name: "Triceratops",
         color: "violed",
-        data: [
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
 
     
@@ -147,121 +251,251 @@ const dinosaurs = [
         category: "Carnivores",
         name: "Allosaurus",
         color: "orange",
-        data:[
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:25.1},{x:30,y:30.9},{x:35,y:null},{x:40,y:37.9},{x:45,y:40.3},
             {x:50,y:41.4},{x:55,y:41.2},{x:60,y:null},{x:65,y:null},{x:70,y:null},
             {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
             {x:100,y:null}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:25.1},{x:30,y:30.9},{x:35,y:null},{x:40,y:37.9},{x:45,y:40.3},
+            {x:50,y:41.4},{x:55,y:41.2},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:100,y:null}
+        ]
+        },
     },
     {
         category: "Carnivores",
         name: "Carnotaurus",
         color: "red",
-        data:[
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
     {
         category: "Carnivores",
         name: "Ceratosaurus",
         color: "plum",
-        data:[
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
     {
         category: "Carnivores",
         name: "Deinosuchus",
         color: "turquoise",
-        data:[
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
     {
         category: "Carnivores",
         name: "Dilophosaurus",
         color: "purple",
-        data:[
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:25.8},{x:30,y:null},{x:36,y:44.7},{x:40,y:47.6},{x:45,y:49},
-            {x:50,y:50.4},{x:55,y:50.6},{x:60,y:null},{x:67,y:49.5},{x:70,y:48.8},
-            {x:75,y:47.5},{x:80,y:49.4},{x:85,y:51.9},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
     {
         category: "Carnivores",
         name: "Herrerasaurus",
         color: "khaki",
-        data:[
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
     {
         category: "Carnivores",
         name: "Omniraptor",
         color: "brown",
-        data:[
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
     {
         category: "Carnivores",
         name: "Pteranodon",
         color: "coral",
-        data:[
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
     {
         category: "Carnivores",
         name: "Troodon",
         color: "white",
-        data:[
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
     {
         category: "Carnivores",
         name: "Tyrannosaurus",
         color: "indigo",
-        data:[
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:16},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
 
 
@@ -275,26 +509,52 @@ const dinosaurs = [
         category:"Omnivores",
         name:"Beipiaosaurus",
         color:"teal",
-        data:[
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
 
     {
         category:"Omnivores",
         name:"Gallimimus",
         color:"brown",
-        data:[
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
-            {x:100,y:null}
+            {x:75,y:50},{x:80,y:55},{x:85,y:60},{x:90,y:60},{x:95,y:60},
+            {x:100,y:60}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:50},{x:80,y:50},{x:85,y:50},{x:90,y:50},{x:95,y:50},
+            {x:100,y:50}
+        ]
+        },
     },
 
 
@@ -354,7 +614,7 @@ const hoverImagePlugin = {
 
         if (!image || !image.complete) return;
 
-        const size = 42;
+        const size = 60;
 
         ctx.save();
 
