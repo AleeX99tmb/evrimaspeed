@@ -17,13 +17,28 @@ const dinosaurs = [
         category: "Herbivores",
         name: "Diabloceratops",
         color: "gold",
-        data: [
+
+        prime: {
+            minGrowth: 75,
+            data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:64},{x:95,y:null},
             {x:100,y:null}
         ]
+        },
+        frail: {
+            minGrowth: 75,
+            data: [
+            {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
+            {x:25,y:40},{x:30,y:50},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
+            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:60},{x:95,y:null},
+            {x:100,y:null}
+        ]
+        }, 
+        
     },
     {
         category: "Herbivores",
@@ -55,19 +70,19 @@ const dinosaurs = [
         color: "green",
         data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
-            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:39.6},{x:91,y:39.1},{x:97,y:38},
+            {x:25,y:17.9},{x:30,y:24.2},{x:35,y:27.9},{x:40,y:33},{x:45,y:36.7},
+            {x:50,y:41.5},{x:55,y:43.5},{x:60,y:42.4},{x:65,y:null},{x:70,y:null},
+            {x:75,y:39.6},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
             {x:100,y:null}
         ]
     },
     {
         category: "Herbivores",
-        name: "Maiasaurus",
+        name: "Maiasaura",
         color: "blue",
         data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:19.5},{x:30,y:16.8},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
             {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
             {x:100,y:null}
@@ -79,7 +94,7 @@ const dinosaurs = [
         color: "tomato",
         data: [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
+            {x:25,y:23.8},{x:30,y:30.6},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
             {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
             {x:100,y:null}
@@ -182,9 +197,9 @@ const dinosaurs = [
         color: "purple",
         data:[
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
-            {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
-            {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:25,y:25.8},{x:30,y:null},{x:36,y:44.7},{x:40,y:47.6},{x:45,y:49},
+            {x:50,y:50.4},{x:55,y:50.6},{x:60,y:null},{x:67,y:49.5},{x:70,y:48.8},
+            {x:75,y:47.5},{x:80,y:49.4},{x:85,y:51.9},{x:90,y:null},{x:95,y:null},
             {x:100,y:null}
         ]
     },
@@ -244,7 +259,7 @@ const dinosaurs = [
             {x:0,y:null},{x:5,y:null},{x:10,y:null},{x:15,y:null},{x:20,y:null},
             {x:25,y:null},{x:30,y:null},{x:35,y:null},{x:40,y:null},{x:45,y:null},
             {x:50,y:null},{x:55,y:null},{x:60,y:null},{x:65,y:null},{x:70,y:null},
-            {x:75,y:null},{x:80,y:null},{x:85,y:null},{x:90,y:null},{x:95,y:null},
+            {x:75,y:null},{x:80,y:16},{x:85,y:null},{x:90,y:null},{x:95,y:null},
             {x:100,y:null}
         ]
     },
@@ -292,13 +307,16 @@ dinosaurs.forEach(dinosaur => {
 
 
 
-// Crear datasets separados por columnas
-
 const datasets = dinosaurs.map(dinosaur => ({
 
     label: `${dinosaur.category} - ${dinosaur.name}`,
 
-    data: dinosaur.data,
+    // Prime por defecto
+    data: dinosaur.prime ? dinosaur.prime.data : dinosaur.data,
+
+    dinosaur: dinosaur,
+
+    mode: "prime",
 
     image: dinosaur.image,
 
@@ -343,7 +361,7 @@ const hoverImagePlugin = {
         // círculo blanco detrás
         ctx.beginPath();
         ctx.arc(point.x, point.y, size / 2 + 3, 0, Math.PI * 2);
-        ctx.fillStyle = "white";
+        //ctx.fillStyle = "white";
         ctx.fill();
 
         // borde negro
@@ -370,38 +388,32 @@ const hoverImagePlugin = {
 
 };
 
-new Chart(ctx, {
+const chart = new Chart(ctx, {
 
-    type:"line",
+    type: "line",
 
-    data:{
-        datasets:datasets
+    data: {
+        datasets: datasets
     },
 
     plugins: [hoverImagePlugin],
 
-    options:{
+    options: {
 
-        responsive:true,
+        responsive: true,
 
+        plugins: {
 
-        plugins:{
-
-            legend:{
-
-                position:"right",
-
+            legend: {
+                display: false   // Ocultamos la leyenda de Chart.js
             },
 
+            tooltip: {
 
-            tooltip:{
+                callbacks: {
 
-                callbacks:{
-
-                    label:function(context){
-
+                    label(context) {
                         return ` Growth ${context.parsed.x}% - Speed ${context.parsed.y} km/h`;
-
                     }
 
                 }
@@ -410,43 +422,40 @@ new Chart(ctx, {
 
         },
 
+        scales: {
 
-        scales:{
+            x: {
 
+                type: "linear",
 
-            x:{ //growth
+                min: 0,
 
-                type:"linear",
+                max: 100,
 
-                min:0,
-
-                max:100,
-
-                ticks:{
-                    stepSize:5
+                ticks: {
+                    stepSize: 5
                 },
 
-                title:{
-                    display:true,
-                    text:"Growth (%)"
+                title: {
+                    display: true,
+                    text: "Growth (%)"
                 }
 
             },
 
+            y: {
 
-            y:{ //speed
+                min: 15,
 
-                min:15,
+                max: 60,
 
-                max:60,
-
-                ticks:{
-                    stepSize:2
+                ticks: {
+                    stepSize: 2
                 },
 
-                title:{
-                    display:true,
-                    text:"Speed"
+                title: {
+                    display: true,
+                    text: "Speed"
                 }
 
             }
@@ -454,5 +463,204 @@ new Chart(ctx, {
         }
 
     }
+
+});
+
+
+const legendContainer = document.getElementById("legend-container");
+
+
+const categories = {
+    Herbivores: [],
+    Carnivores: [],
+    Omnivores: []
+};
+
+
+// Agrupar dinosaurios
+chart.data.datasets.forEach((dataset, index)=>{
+
+    const category = dataset.label.split(" - ")[0];
+
+    if(categories[category]){
+
+        categories[category].push({
+            dataset,
+            index
+        });
+
+    }
+
+});
+
+
+
+// Crear columnas
+Object.keys(categories).forEach(category=>{
+
+
+    const column = document.createElement("div");
+    column.className = "legend-column";
+
+
+    const title = document.createElement("div");
+
+    title.className = "legend-title";
+
+    title.textContent = category;
+
+
+    column.appendChild(title);
+
+
+
+    categories[category].forEach(item=>{
+
+
+        const row = document.createElement("div");
+
+        row.className = "legend-item";
+
+
+
+        const color = document.createElement("span");
+
+        color.className = "legend-color";
+
+        color.style.backgroundColor = item.dataset.borderColor;
+
+
+
+        const text = document.createElement("span");
+
+        text.textContent = item.dataset.label.replace(
+            category + " - ",
+            ""
+        );
+
+
+
+        row.appendChild(color);
+
+        row.appendChild(text);
+
+
+
+        // ⭐ Prime/Frail
+
+        const star = document.createElement("span");
+
+
+        star.textContent = "★";
+
+        star.style.marginLeft = "8px";
+
+        star.style.cursor = "pointer";
+
+        star.style.color = "gold";
+
+        star.style.fontSize = "18px";
+
+
+
+        star.onclick = (e)=>{
+
+
+            e.stopPropagation();
+
+
+
+            const dataset = chart.data.datasets[item.index];
+
+            const dino = dataset.dinosaur;
+
+
+
+            if(dataset.mode === "prime"){
+
+
+                dataset.mode = "frail";
+
+
+                dataset.data = dino.frail 
+                    ? dino.frail.data 
+                    : dino.data;
+
+
+
+                star.style.color = "white";
+
+
+            }
+            else{
+
+
+                dataset.mode = "prime";
+
+
+                dataset.data = dino.prime
+                    ? dino.prime.data
+                    : dino.data;
+
+
+
+                star.style.color = "gold";
+
+
+            }
+
+
+
+            chart.update();
+
+
+        };
+
+
+
+        row.appendChild(star);
+
+
+
+
+        // Ocultar/mostrar dinosaurio
+
+        row.onclick = ()=>{
+
+
+            const visible = chart.isDatasetVisible(item.index);
+
+
+
+            chart.setDatasetVisibility(
+                item.index,
+                !visible
+            );
+
+
+            chart.update();
+
+
+
+            row.style.opacity = visible 
+                ? 0.4 
+                : 1;
+
+
+        };
+
+
+
+        column.appendChild(row);
+
+
+
+    });
+
+
+
+    legendContainer.appendChild(column);
+
+
 
 });
