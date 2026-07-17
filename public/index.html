@@ -15,18 +15,59 @@
             "name":"Evrima Dinosaur Speed Chart",
             "description":"Interactive speed comparison chart for The Isle Evrima dinosaurs.",
             "keywords":[
-            "Evrima speed",
-            "Allosaurus speed",
-            "Dinosaur stats",
-            "The Isle Evrima"
+                "Evrima speed",
+                "Allosaurus speed",
+                "Dinosaur stats",
+                "The Isle Evrima"
             ]
             }
+            </script>
+
+            <script type="application/ld+json">
+            {
+            "@context":"https://schema.org",
+            "@type":"FAQPage",
+            "mainEntity":[
+                {
+                "@type":"Question",
+                "name":"Which is the fastest dinosaur in The Isle Evrima?",
+                "acceptedAnswer":{
+                    "@type":"Answer",
+                    "text":"The fastest herbivore is Gallimimus (Galli) with a maximum speed of 56.9 km/h. The fastest carnivore is Carnotaurus (Carno) with a top speed of 55.6 km/h."
+                }
+                },
+                {
+                "@type":"Question",
+                "name":"What is the maximum speed of a Prime Allosaurus?",
+                "acceptedAnswer":{
+                    "@type":"Answer",
+                    "text":"A Prime Allosaurus reaches a maximum speed of 39.4 km/h. In the Frail stage, its maximum speed is reduced to 35.8 km/h."
+                }
+                }
+            ]
+            }
+            </script>
+
+
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-004BSVXWL7"></script>
+
+            <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag(){
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', 'G-004BSVXWL7');
             </script>
     </head>
 
 <body>
 
-    <h1>Evrima Speed</h1>
+    <h1>The Isle Evrima Dinosaur Speed Chart</h1>
 
     
     <canvas id="speedChart"></canvas>
@@ -35,6 +76,41 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="app.js"></script>
+
+    <section class="faq">
+
+        <h2>Frequently Asked Questions</h2>
+        <p></p>
+        <p></p>
+        <details>
+            <summary>Which is the fastest dinosaur in The Isle Evrima?</summary>
+            <p>
+                The fastest herbivore in <strong>The Isle Evrima</strong> is the
+                <strong>Gallimimus (Galli)</strong>, reaching a maximum speed of
+                <strong>56.9 km/h</strong>.
+            </p>
+
+            <p>
+                The fastest carnivore is the
+                <strong>Carnotaurus (Carno)</strong>, with a top speed of
+                <strong>55.6 km/h</strong>.
+            </p>
+        </details>
+
+        <details>
+            <summary>What is the maximum speed of a Prime Allosaurus?</summary>
+            <p>
+                A fully grown <strong>Prime Allosaurus</strong> reaches a maximum
+                running speed of <strong>39.4 km/h</strong>.
+            </p>
+
+            <p>
+                When the Allosaurus becomes <strong>100 growth</strong>, its maximum
+                speed is reduced to <strong>35.8 km/h</strong>. 
+            </p>
+        </details>
+
+    </section>
 
 </body>
 
